@@ -20,13 +20,15 @@
 
             const domNode = document.getElementById("app");
 
-            function Header() {
-                return <h1>Develop. Preview. Ship.</h1>
+            function Header({ title }) {
+                console.log("Title ---> ", title);
+                return <h1>{title ? title : "Default Title"}</h1>
             }
 
             function HomePage() {
                 return <div>
-                    <Header />
+                    <Header title="React" />
+                    <Header title="A new title" />
                     </div>
             }
 
