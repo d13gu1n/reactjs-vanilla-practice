@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script type="importmap">
+            {
+                "imports": {
+                    "react": "https://esm.sh/react@latest?dev",
+                    "react-dom/client": "https://esm.sh/react-dom@latest/client?dev"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script type="text/javascript">
+            // Elegir elemento div con id "app"
+            const app = document.getElementById("app");
+
+            // Crear un H1
+            const header = document.createElement("h1");
+
+            // Crear un nuevo nodo de texto para el H1
+            const text = "Develop. Preview. Ship.";
+            const headerContent = document.createTextNode(text);
+
+            // Pegar el texto al H1
+            header.appendChild(headerContent);
+
+            // Poner el H1 dentro del div
+            app.appendChild(header);
+        </script>
+    </body>
+</html>
