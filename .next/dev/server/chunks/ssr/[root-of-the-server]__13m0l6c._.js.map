@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///home/dacevedom/react-practice/app/page.js"],"sourcesContent":["import { useState } from 'react';\ni\nfunction Header({ title }) {\n    return <h1>{title ? title : \"Default title\"}</h1>\n}\n\nexport default function HomePage() {\n    const names = [\"Ada Lovelace\", \"Grace Hopper\", \"Margaret Hamilton\"];\n\n    return (\n        <div>\n            <Header title=\"Develop. Preview. Ship\" />\n            <ul>\n                {names.map((name) => (\n                    <li key={name}>{name}</li>\n                ))}\n            </ul>\n        </div>\n    );\n}"],"names":["i","Header","title","HomePage","names","map","name"],"mappings":";;;;;AAAA;;;AACAA;AACA,SAASC,OAAO,EAAEC,KAAK,EAAE;IACrB,qBAAO,8OAAC;kBAAIA,QAAQA,QAAQ;;;;;;AAChC;AAEe,SAASC;IACpB,MAAMC,QAAQ;QAAC;QAAgB;QAAgB;KAAoB;IAEnE,qBACI,8OAAC;;0BACG,8OAACH;gBAAOC,OAAM;;;;;;0BACd,8OAAC;0BACIE,MAAMC,GAAG,CAAC,CAACC,qBACR,8OAAC;kCAAeA;uBAAPA;;;;;;;;;;;;;;;;AAK7B"}}]
+}
